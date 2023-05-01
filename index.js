@@ -9,28 +9,42 @@ const operation = process.argv.slice(2)
 // complete the  function
 
 switch (operation[0]) {
-  case ('add') : console.log(`${(+operation[1]) + (+operation[2])}`)
+  case ('add'): {
+    console.log(`${(+operation[1]) + (+operation[2])}`)
     break
+  }
 
-  case ('sub') : console.log(`${(+operation[1]) - (+operation[2])}`)
+  case ('sub'): {
+    console.log(`${(+operation[1]) - (+operation[2])}`)
     break
+  }
 
-  case ('mult') : console.log(`${(+operation[1]) * (+operation[2])}`)
+  case ('mult'): {
+    console.log(`${(+operation[1]) * (+operation[2])}`)
     break
+  }
 
-  case ('divide') : console.log(`${(+operation[1]) / (+operation[2])}`)
+  case ('divide'): {
+    console.log(`${(+operation[1]) / (+operation[2])}`)
     break
+  }
 
-  case ('sin') : console.log(`${Math.sin(+operation[1])}`)
+  case ('sin'): {
+    console.log(`${Math.sin(+operation[1])}`)
     break
+  }
 
-  case ('cos') : console.log(`${Math.cos(+operation[1])}`)
+  case ('cos'): {
+    console.log(`${Math.cos(+operation[1])}`)
     break
+  }
 
-  case ('tan') : console.log(`${Math.tan(+operation[1])}`)
+  case ('tan'): {
+    console.log(`${Math.tan(+operation[1])}`)
     break
+  }
 
-  case ('random') :
+  case ('random'): {
     if (!operation[1]) {
       console.log('Provide length for random number generation.')
     }
@@ -42,7 +56,9 @@ switch (operation[0]) {
       console.log(error)
     }
     break
+  }
 
-  default:
+  default: {
     console.log('Invalid operation operation')
+  }
 }
