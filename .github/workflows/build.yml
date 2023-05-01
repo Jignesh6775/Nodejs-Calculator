@@ -5,6 +5,7 @@ jobs:
           steps :
                 - run : node --version
                 - uses: actions/checkout@v2
+                - run : npm i jest
                 - run : npm run test
                 - uses: actions/setup-node@v2
                   with:
