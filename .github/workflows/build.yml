@@ -5,9 +5,9 @@ jobs:
           steps :
                 - run : node --version
                 - uses: actions/checkout@v2
+                - run : npm run test
                 - uses: actions/setup-node@v2
                   with:
                     node-version: '14'
                 - run : npm i eslint
                 - run : npx eslint index.js
-                - run : npm run test
