@@ -2,5 +2,5 @@ on : push
 jobs:
       first-job:
           runs-on : ubuntu-latest
-          stpes :
+          steps :
                 - run : node --version
